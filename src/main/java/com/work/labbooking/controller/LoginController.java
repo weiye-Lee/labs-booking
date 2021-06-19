@@ -1,7 +1,7 @@
 package com.work.labbooking.controller;
 
 
-import com.work.labbooking.common.EncryptComponent05;
+import com.work.labbooking.common.EncryptComponent;
 import com.work.labbooking.entity.User;
 import com.work.labbooking.service.UserService;
 import com.work.labbooking.vo.ResultVO;
@@ -15,14 +15,14 @@ import java.util.Map;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/example06/")
-public class ExampleController06 {
+@RequestMapping("/api/")
+public class LoginController {
     @Autowired
     private UserService userService;
     @Autowired
     private PasswordEncoder encoder;
     @Autowired
-    private EncryptComponent05 encryptComponent;
+    private EncryptComponent encryptComponent;
 
     @PostMapping("login")
     public ResultVO login(@RequestBody User user, HttpServletResponse response) {

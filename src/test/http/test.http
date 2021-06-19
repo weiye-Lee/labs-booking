@@ -1,0 +1,33 @@
+GET http://localhost:8080/api/teacher/booking
+Accept: application/json
+token: 04834badb9ab5c77622367bdb8092018faff8776230c1af034c758028e8bfb00d7c9ca4818d48e998e5d2612efd9fa83
+
+
+###
+POST http://localhost:8080/api/admin/lab
+Content-Type: application/json
+token: 04834badb9ab5c77622367bdb8092018faff8776230c1af034c758028e8bfb00d7c9ca4818d48e998e5d2612efd9fa83
+
+{}
+
+###
+GET http://localhost:8080/api/admin/welcome
+Accept: application/json
+token: 04834badb9ab5c77622367bdb8092018faff8776230c1af034c758028e8bfb00d7c9ca4818d48e998e5d2612efd9fa83
+
+###
+GET http://localhost:8080/api/admin/teacher
+Accept: application/json
+token: 04834badb9ab5c77622367bdb8092018faff8776230c1af034c758028e8bfb00d7c9ca4818d48e998e5d2612efd9fa83
+###
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "2018214185",
+  "password": "123456"
+}
+
+###
+
+

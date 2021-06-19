@@ -1,5 +1,7 @@
 package com.work.labbooking.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,9 +13,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-
-    private Long id;
-    private String userName;
+    @TableId(type = IdType.AUTO)
+    private Integer id;
+    private String name;
     private String role;
 
     private String account;

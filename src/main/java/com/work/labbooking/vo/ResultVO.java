@@ -16,6 +16,10 @@ public class ResultVO {
         return ResultVO.builder().code(200).data(data).build();
     }
 
+    public static ResultVO successWithNoDate() {
+        return ResultVO.builder().code(200).data(null).build();
+    }
+
     public static ResultVO error(int code, String msg) {
         return ResultVO.builder().code(code).message(msg).build();
     }

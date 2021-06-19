@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Component
-public class EncryptComponent05 {
+public class EncryptComponent {
     @Autowired
     private ObjectMapper objectMapper;
     @Value("${my.secretkey}")

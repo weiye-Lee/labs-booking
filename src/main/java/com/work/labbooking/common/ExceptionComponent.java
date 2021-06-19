@@ -16,7 +16,7 @@ import java.util.Set;
 
 @Slf4j
 @RestControllerAdvice
-public class ExceptionController {
+public class ExceptionComponent {
     @ExceptionHandler(MyException.class)
     public ResultVO handleValidException(MyException exception) {
         return ResultVO.error(exception.getCode(), exception.getMessage());
