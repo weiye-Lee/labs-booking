@@ -11,10 +11,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
+
     private Long id;
     private String userName;
     private String role;
 
+    private String account;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 }

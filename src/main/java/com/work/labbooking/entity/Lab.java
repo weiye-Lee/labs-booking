@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class lab {
+public class Lab {
     private Integer id;
-    private String name;
     private Integer contain;
+    private String name;
     private String desc;
     private String room;
 

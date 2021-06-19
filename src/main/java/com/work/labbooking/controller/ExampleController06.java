@@ -26,7 +26,7 @@ public class ExampleController06 {
 
     @PostMapping("login")
     public ResultVO login(@RequestBody User user, HttpServletResponse response) {
-        User u = userService.getUser(user.getUserName());
+        User u = userService.getUser(user.getAccount());
         if (u == null || !encoder.matches(user.getPassword(), u.getPassword())) {
             return ResultVO.error(401, "用户名密码错误");
         }
